@@ -1,5 +1,20 @@
+# Any Time you change your data model you must deploy to prisma
+
 type User {
   id: ID! @unique
   name: String!
   email: String!
+}
+
+type Item {
+  id: ID! @unique
+  title: String!
+  description: String!
+  image: String!
+  largeImage: String
+  price: Int!
+  createAt: DateTime!
+  updatedAt: DataTime!
+  # user: User!
+  # 3:07
 }
