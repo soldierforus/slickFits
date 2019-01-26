@@ -1,15 +1,12 @@
 ## database calls will go in this file
-
-type Dog {
-    name: String!
-}
+## public facing API interfaced with JavaScript
 
 
 type Mutation {
-    createDog(name:String!) : Dog
+    createItem(title: String, description: String, price: Int, image: String, largeImage: String)
 }
 
 ##adding ! after array item means we cannot return null for any item
 type Query {
-    dogs: [Dog!]
+
 }

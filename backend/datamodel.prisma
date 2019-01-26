@@ -1,4 +1,4 @@
-# Any Time you change your data model you must deploy to prisma
+# Any Time you change your data model you must deploy to prisma using `npm run deploy`
 
 type User {
   id: ID! @unique
@@ -14,7 +14,6 @@ type Item {
   largeImage: String
   price: Int!
   createAt: DateTime!
-  updatedAt: DataTime!
+  updatedAt: DateTime!
   # user: User!
-  # 3:07
 }
